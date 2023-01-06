@@ -2,9 +2,9 @@ use crate::messages::Message;
 
 #[derive(serde::Deserialize, serde::Serialize)]
 pub struct ChangePawPosition {
-    leg: u8,
-    relative: bool,
-    position: nalgebra::Vector3<f64>,
+    pub leg: u8,
+    pub relative: bool,
+    pub position: nalgebra::Vector3<f64>,
 }
 
 impl Message for ChangePawPosition {
@@ -23,9 +23,9 @@ impl Message for ChangePawPosition {
 
 #[derive(serde::Deserialize, serde::Serialize)]
 pub struct ChangeTorsoPosition {
-    leg: u8,
-    relative: bool,
-    position: nalgebra::Vector3<f64>,
+    pub leg: u8,
+    pub relative: bool,
+    pub position: nalgebra::Vector3<f64>,
 }
 
 impl Message for ChangeTorsoPosition {
@@ -44,9 +44,9 @@ impl Message for ChangeTorsoPosition {
 
 #[derive(serde::Deserialize, serde::Serialize)]
 pub struct ChangeTorsoOrientation {
-    leg: u8,
-    relative: bool,
-    orientation: nalgebra::Vector3<f64>,
+    pub leg: u8,
+    pub relative: bool,
+    pub orientation: nalgebra::Vector3<f64>,
 }
 
 impl Message for ChangeTorsoOrientation {

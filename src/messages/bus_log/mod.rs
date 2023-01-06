@@ -2,9 +2,9 @@ use crate::messages::Message;
 
 #[derive(serde::Serialize)]
 pub struct Record {
-    timestamp: u128,
-    message: std::borrow::Cow<'static, str>,
-    group: Option<std::borrow::Cow<'static, str>>,
+    pub timestamp: u128,
+    pub message: std::borrow::Cow<'static, str>,
+    pub group: Option<std::borrow::Cow<'static, str>>,
 }
 
 impl Record {
