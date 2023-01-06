@@ -23,7 +23,6 @@ impl Message for ChangePawPosition {
 
 #[derive(serde::Deserialize, serde::Serialize)]
 pub struct ChangeTorsoPosition {
-    pub leg: u8,
     pub relative: bool,
     pub position: nalgebra::Vector3<f64>,
 }
@@ -44,7 +43,6 @@ impl Message for ChangeTorsoPosition {
 
 #[derive(serde::Deserialize, serde::Serialize)]
 pub struct ChangeTorsoOrientation {
-    pub leg: u8,
     pub relative: bool,
     pub orientation: nalgebra::Vector3<f64>,
 }
