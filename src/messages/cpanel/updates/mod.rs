@@ -51,7 +51,7 @@ impl PoseChangeBuilder {
         }
     }
 
-    fn build(self) -> PoseChange {
+    pub fn build(self) -> PoseChange {
         PoseChange::new(self.timestamp, self.leg_vertices)
     }
 }
