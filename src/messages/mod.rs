@@ -1,6 +1,7 @@
 pub mod kinematics;
 pub mod motion;
 pub mod bus_log;
+pub mod cpanel;
 
 pub trait Message {
     fn encode(&self) -> Vec<u8>;
